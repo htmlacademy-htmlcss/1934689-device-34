@@ -25,19 +25,28 @@
                 width="145" height="36">
             </a>
 
-            <form class="navigation-search" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="navigation-search catalog-navigation-search" action="https://echo.htmlacademy.ru/"
+              method="post">
+              <svg class="imput-search-ico" aria-hidden="true" focusable="false" width="16" height="17"
+                viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m15.7 14.69-3.1-3.1c.9-1.2 1.4-2.6 1.4-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.39c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"
+                  fill="CurrentColor" />
+              </svg>
               <label for="search">
                 <span class="visually-hidden">Поиск</span>
                 <input class="navigation-search-input catalog-navigation-search-input " name="navigation-search"
                   type="text" placeholder="Текст поиска">
+                <em class="focus-border-imput"></em>
                 <button class="navigation-search-btn" type="submit">Найти</button>
+                <em class="focus-border-btn"></em>
               </label>
             </form>
 
-            <ul class="navigation-list navigation-user">
+            <ul class="catalog-navigation-list navigation-user">
 
               <li class="navigation-item">
-                <a class="navigation-link catalog-user-acount" href="#">Коля Петухов</a>
+                <a class="navigation-link catalog-user-name" href="#">Коля Петухов</a>
               </li>
 
               <li class="navigation-item">
@@ -49,19 +58,19 @@
               </li>
 
               <li class="navigation-item">
-                <a class="navigation-link catalog-user-curt" href="#">
+                <a class="navigation-link navigation-cart" href="#">
                   <span class="quantity-cutrent-item">2</span>
                   Корзина
-
                 </a>
               </li>
 
 
             </ul>
 
-            <a class="navigation-catalog-store" href="catalog.html">
+            <a class="link navigation-catalog-store" href="catalog.html">
               Каталог товаров
-
+              <em class="focus-border-catalog-products"></em>
+              <span class="button-store"></span>
             </a>
 
 
@@ -205,9 +214,9 @@
                 <label class="select-control-title">
                   сортировка:
                   <select class="select-control">
-                    <option value="popular">Сначала популярное</option>
-                    <option value="cheap">Сначала дешовое</option>
-                    <option value="expensive">Сначала дорогое</option>
+                    <option value="popular">популярное</option>
+                    <option value="cheap">дешовое</option>
+                    <option value="expensive">дорогое</option>
                   </select>
                 </label>
 
@@ -227,8 +236,16 @@
 
                     <img class="products-card-image" src="./images/catalog-page/products/amateur-selfie-stick.jpg"
                       width="360" height="380" alt="Любительская селфи-палка.">
+                    <svg class="products-card-new" aria-hidden="true" focusable="false" width="60" height="60"
+                      viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="30" cy="30" r="29" stroke="#000" stroke-opacity=".6" stroke-width="2" />
+                      <path
+                        d="M13.56 28.32V34h-2.3v-9.94h1.83l4.6 5.85v-5.85H20V34H18.1l-4.55-5.68Zm18.12 3.66V34h-6.99v-9.94h6.86v2.02h-4.56V28h3.92v1.86h-3.92v2.11h4.69Zm7.47-7.9h2.11l1.04 3.17 1.03-3.18h2.13l-1.7 4.62 1.02 2.65 2.49-7.28h2.5L45.9 34h-2l-1.6-3.9-1.6 3.9h-2l-3.86-9.94h2.49l2.5 7.28.98-2.65-1.66-4.62Z"
+                        fill="#000" fill-opacity=".6" />
+                    </svg>
                     <h3 class="products-card-title">Любительская <br>селфи-палка</h3>
                     <b class="products-card-price">500 ₽</b>
+                    <span class="products-card-more">Подробнее</span>
                   </a>
                 </li>
                 <li class="products-card">
@@ -236,8 +253,16 @@
 
                     <img class="products-card-image" src="./images/catalog-page/products/professional-selfie-stick.jpg"
                       width="360" height="380" alt="Любительская селфи-палка.">
+                    <svg class="products-card-new" aria-hidden="true" focusable="false" width="60" height="60"
+                      viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="30" cy="30" r="29" stroke="#000" stroke-opacity=".6" stroke-width="2" />
+                      <path
+                        d="M13.56 28.32V34h-2.3v-9.94h1.83l4.6 5.85v-5.85H20V34H18.1l-4.55-5.68Zm18.12 3.66V34h-6.99v-9.94h6.86v2.02h-4.56V28h3.92v1.86h-3.92v2.11h4.69Zm7.47-7.9h2.11l1.04 3.17 1.03-3.18h2.13l-1.7 4.62 1.02 2.65 2.49-7.28h2.5L45.9 34h-2l-1.6-3.9-1.6 3.9h-2l-3.86-9.94h2.49l2.5 7.28.98-2.65-1.66-4.62Z"
+                        fill="#000" fill-opacity=".6" />
+                    </svg>
                     <h3 class="products-card-title">Профессиональная<br>селфи-палка</h3>
                     <b class="products-card-price">1500 ₽</b>
+                    <span class="products-card-more">Подробнее</span>
                   </a>
                 </li>
 
@@ -246,8 +271,16 @@
 
                     <img class="products-card-image" src="./images/catalog-page/products/unsinkable-selfie-stick.jpg"
                       width="360" height="380" alt="Любительская селфи-палка.">
+                    <svg class="products-card-new" aria-hidden="true" focusable="false" width="60" height="60"
+                      viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="30" cy="30" r="29" stroke="#000" stroke-opacity=".6" stroke-width="2" />
+                      <path
+                        d="M13.56 28.32V34h-2.3v-9.94h1.83l4.6 5.85v-5.85H20V34H18.1l-4.55-5.68Zm18.12 3.66V34h-6.99v-9.94h6.86v2.02h-4.56V28h3.92v1.86h-3.92v2.11h4.69Zm7.47-7.9h2.11l1.04 3.17 1.03-3.18h2.13l-1.7 4.62 1.02 2.65 2.49-7.28h2.5L45.9 34h-2l-1.6-3.9-1.6 3.9h-2l-3.86-9.94h2.49l2.5 7.28.98-2.65-1.66-4.62Z"
+                        fill="#000" fill-opacity=".6" />
+                    </svg>
                     <h3 class="products-card-title">Непотопляемая<br>селфи-палка</h3>
                     <b class="products-card-price">2500 ₽</b>
+                    <span class="products-card-more">Подробнее</span>
                   </a>
                 </li>
 
@@ -256,8 +289,16 @@
 
                     <img class="products-card-image" src="./images/catalog-page/products/selfie-stick-follow-me.jpg"
                       width="360" height="380" alt="Любительская селфи-палка.">
+                    <svg class="products-card-new" aria-hidden="true" focusable="false" width="60" height="60"
+                      viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="30" cy="30" r="29" stroke="#000" stroke-opacity=".6" stroke-width="2" />
+                      <path
+                        d="M13.56 28.32V34h-2.3v-9.94h1.83l4.6 5.85v-5.85H20V34H18.1l-4.55-5.68Zm18.12 3.66V34h-6.99v-9.94h6.86v2.02h-4.56V28h3.92v1.86h-3.92v2.11h4.69Zm7.47-7.9h2.11l1.04 3.17 1.03-3.18h2.13l-1.7 4.62 1.02 2.65 2.49-7.28h2.5L45.9 34h-2l-1.6-3.9-1.6 3.9h-2l-3.86-9.94h2.49l2.5 7.28.98-2.65-1.66-4.62Z"
+                        fill="#000" fill-opacity=".6" />
+                    </svg>
                     <h3 class="products-card-title">Селфи-палка "Следуй<br>за мной"</h3>
                     <b class="products-card-price">1500 ₽</b>
+                    <span class="products-card-more">Подробнее</span>
                   </a>
                 </li>
               </ul>
@@ -322,6 +363,7 @@
     </main>
 
     <!--Подвал каталага-->
+
     <div class="footer-container">
       <div class="conteiner">
         <footer class="page-footer">
@@ -331,7 +373,7 @@
           <div class="footer-servises">
             <div class="footer-contacts">
               <h2 class="visually-hidden">Контакты</h2>
-              <address class="contacts-address">
+              <address class="footer-contacts-address">
                 <p class="contacts-address-description">Санкт-Петербург, набережная реки Карповки, 5, литера
                   П.
                 </p>
