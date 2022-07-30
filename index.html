@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>интернет магазин Device - все элетронные гаджеты в одном месте по доступной цене!</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
 </head>
 
 <body>
@@ -31,11 +32,11 @@
                 d="m15.7 14.69-3.1-3.1c.9-1.2 1.4-2.6 1.4-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.39c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"
                 fill="CurrentColor" />
             </svg>
-            <label for="search">
-              <span class="visually-hidden">Поиск</span>
-              <input class="navigation-search-input " name="navigation-search" type="text" placeholder="Поиск по сайту">
-              <em class="focus-border-imput"></em>
 
+            <span class="visually-hidden">Поиск</span>
+            <input class="navigation-search-input " name="navigation-search" type="text" placeholder="Поиск по сайту">
+            <em class="focus-border-imput"></em>
+            <label>
               <button class="index-navigation-search-btn navigation-search-btn" type="submit">Найти</button>
               <em class="focus-border-btn"></em>
             </label>
@@ -62,10 +63,42 @@
                 <span class="quantity-cutrent-item">2</span>
                 <span class="navigation-cart-title">Корзина</span>
               </a>
-
+              <div class="cart-container">
+                <ul class="cart-list">
+                  <li class="cart-item">
+                    <a class="cart-item-link">
+                      <img src="./images/catalog-page/products/amateur-selfie-stick.jpg" alt="Товар" width="39"
+                        height="43" />
+                      <p class="cart-item-title">Любительская селфи-палка</p>
+                    </a>
+                  </li>
+                  <li class="cart-item-btn">
+                    <button class="item-delite">
+                      <span class="visually-hidden">Удалить товар.</span>
+                    </button>
+                  </li>
+                </ul>
+                <ul class="cart-list">
+                  <li class="cart-item">
+                    <a class="cart-item-link">
+                      <img src="./images/catalog-page/products/professional-selfie-stick.jpg" alt="Товар" width="39"
+                        height="43" />
+                      <p class="cart-item-title">Профессиональная селфи-палка</p>
+                    </a>
+                  </li>
+                  <li class="cart-item-btn">
+                    <button class="item-delite">
+                      <span class="visually-hidden">Удалить товар.</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="cart-total">
+                  <p>Товаров: 2</p>
+                  <p>Сумма: 2000 ₽</p>
+                </div>
+                <a href="#" class="cart-open-link">Откртыть корзину</a>
+              </div>
             </li>
-
-
           </ul>
 
           <a class="link navigation-catalog-store" href="#">Каталог товаров
@@ -73,6 +106,36 @@
             <span class="button-store"></span>
           </a>
 
+
+          <div class="submenu">
+
+            <div class="submenu-catalog">
+              <ul class="navigation-submenu">
+                <li class="submenu-items">
+                  <a href="#" class="submenu-links">Виртуальная реальность</a>
+                </li>
+                <li class="submenu-items">
+                  <a href="catalog.html" class="submenu-links">Моноподы для селфи</a>
+                </li>
+                <li class="submenu-items">
+                  <a href="#" class="submenu-links">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="navigation-submenu">
+                <li class="submenu-items">
+                  <a href="#" class="submenu-links">Фитнес-браслеты</a>
+                </li>
+                <li class="submenu-items">
+                  <a href="#" class="submenu-links">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="navigation-submenu">
+                <li class="submenu-items">
+                  <a href="#" class="submenu-links">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <ul class="navigation-list navigation-servises">
 
             <li class="navigation-item">
@@ -94,6 +157,7 @@
 
       </header>
     </div>
+
     <!--Главная страница-->
 
     <main class="main-conteiner main-index">
@@ -238,7 +302,9 @@
           </section>
         </div>
       </div>
+
       <!--Услуги магазина-->
+
       <div class="conteiner-background">
         <div class="conteiner">
           <section class="servises">
@@ -247,37 +313,30 @@
               <dt>
                 <a href="#" class="link item-feature-name item-feature-name-current">Доставка</a>
               </dt>
-              <div class=" servises-togle-delivery">
-                <dd class="item-feature-value value-delivery">
-                  <span class="item-feature-value-title">Доставка</span>
-                  Мы с удовольствием доставим ваш товар прямо к вашему
-                  подъезду совершенно бесплатно! Ведь неплохо заработаем,
-                  поднимая его на ваш этаж.
-                </dd>
-              </div>
-
+              <dd class="item-feature-value value-delivery">
+                <span class="item-feature-value-title">Доставка</span>
+                Мы с удовольствием доставим ваш товар прямо к вашему
+                подъезду совершенно бесплатно! Ведь неплохо заработаем,
+                поднимая его на ваш этаж.
+              </dd>
               <dt>
                 <a href="#" class="link yellow-button item-feature-name-garanty">Гарантия</a>
               </dt>
-              <div class="visually-hidden servises-togle-garantie">
-                <dd class="item-feature-value value-garanty">
-                  <span class="item-feature-value-title">Гарантия</span>
-                  Если из-за возгорания купленного у нас товара у вас сгорит
-                  дом — не переживайте, мы выдадим вам новый. Товар, не дом,
-                  конечно же.
-                </dd>
-              </div>
+              <dd class="visually-hidden item-feature-value value-garanty">
+                <span class="visually-hidden item-feature-value-title">Гарантия</span>
+                Если из-за возгорания купленного у нас товара у вас сгорит
+                дом — не переживайте, мы выдадим вам новый. Товар, не дом,
+                конечно же.
+              </dd>
               <dt>
                 <a href="#" class="link yellow-button item-feature-name-credit">Кредит</a>
               </dt>
-              <div class="visually-hidden servises-togle-credit">
-                <dd class="item-feature-value value-credit">
-                  <span class="item-feature-value-title">Кредит</span>
-                  Залезть в долговую яму стало проще! Кредитные консультанты
-                  подберут для вас наиболее выгодные условия кредита. Выгодные
-                  для банка, разумеется.
-                </dd>
-              </div>
+              <dd class="visually-hidden item-feature-value value-credit">
+                <span class="visually-hidden item-feature-value-title">Кредит</span>
+                Залезть в долговую яму стало проще! Кредитные консультанты
+                подберут для вас наиболее выгодные условия кредита. Выгодные
+                для банка, разумеется.
+              </dd>
             </dl>
           </section>
         </div>
