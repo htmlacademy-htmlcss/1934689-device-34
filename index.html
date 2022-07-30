@@ -483,6 +483,75 @@
       </div>
     </div>
   </div>
+
+  <div class="modal-conteiner">
+    <div class="modal modal-delivery">
+
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+
+      <section class="modal-content">
+
+        <h2 class="modal-title">Доставка под заказ</h2>
+
+        <form class="modal-delivery-form" action="https://echo.htmlacademy.ru" method="post">
+
+          <div class="auth-group">
+
+            <label class="auth-title auth-title-name">Ваше имя:
+              <input class="auth-name" type="text" name="auth-login" placeholder="Введите имя">
+            </label>
+
+            <label class="auth-title auth-title-email">Ваш e-mail:
+              <input class="auth-email auth-email-error" type="email" name="auth-email" placeholder="Ваша почта">
+              <span class="auth-email-error-text">Забавный у вас адрес</span>
+            </label>
+
+          </div>
+
+          <div class="needs-group">
+
+            <label class="needs-title">Что нужно привезти:
+              <input class="needs" type="text" name="needs-imput" placeholder="В свободной форме">
+            </label>
+
+            <label class="quantity-needs-title lbel-ico">Количество:</label>
+
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                <svg class="tooltip-ico" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="13" fill="#FFE17F" />
+                  <path d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z" fill="#000" />
+                </svg>
+              </button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label">"Постараемся найти, сколько нужно. Привезем
+                сколько получится по требованиям к провозу багажа."
+              </span>
+            </span>
+            <button class="quantity-button" type="button">
+              <span class="button-minus"></span>
+              <span class="visually-hidden">Убавить.</span>
+            </button>
+
+            <input class="quantity-needs" type="number" id="quantity-needs" name="quantity-needs" min="1" readonly
+              value="1" placeholder="1">
+
+            <button class="quantity-button" type="button">
+              <span class="button-plus"></span>
+              <span class="visually-hidden">Добавить.</span>
+            </button>
+
+          </div>
+
+          <button class="link yellow-button modal-delivery-form-button" type="submit">
+            Отправить
+          </button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>
