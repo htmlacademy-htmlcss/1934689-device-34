@@ -6,102 +6,122 @@
   <title>интернет магазин Device - все элетронные гаджеты в одном месте по доступной цене!</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+
   <div class="page-container">
     <!--шапка-->
+
     <div class="conteiner">
+
       <header class="page-header">
 
-        <!--Навигация-->
+        <!--Лого-->
 
-        <nav class="navigation">
+        <div class="header-logo">
 
-          <!--Лого-->
-
-          <a class="link navigation-logo" href="index.html">
+          <a class="link header-logo-link" href="index.html">
             <img class="logo" src="./images/header/logo-header.svg" alt="Логотип Интернет-магазина «Девайс»."
               width="145" height="36">
           </a>
+        </div>
 
-          <form class="index-navigation-search navigation-search" action="https://echo.htmlacademy.ru/" method="post">
-            <svg class="imput-search-ico" aria-hidden="true" focusable="false" width="16" height="17"
-              viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="m15.7 14.69-3.1-3.1c.9-1.2 1.4-2.6 1.4-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.39c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"
-                fill="CurrentColor" />
-            </svg>
+        <!--Поиск и юзер бар -->
+        <!--поиск-->
 
-            <span class="visually-hidden">Поиск</span>
-            <input class="navigation-search-input " name="navigation-search" type="text" placeholder="Поиск по сайту">
-            <em class="focus-border-imput"></em>
-            <label>
-              <button class="index-navigation-search-btn navigation-search-btn" type="submit">Найти</button>
-              <em class="focus-border-btn"></em>
-            </label>
-          </form>
+        <div class="header-middle">
 
-          <ul class="index-navigation-list navigation-list navigation-user">
+          <div class="middle-search">
 
-            <li class="navigation-item">
+            <form class="middle-search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <svg class="imput-search-ico" aria-hidden="true" focusable="false" width="16" height="17"
+                viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m15.7 14.69-3.1-3.1c.9-1.2 1.4-2.6 1.4-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.39c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"
+                  fill="CurrentColor" />
+              </svg>
 
-              <a class="navigation-link navigation-login" href="#">
-                <span class="navigation-login-title">Войти</span>
-              </a>
+              <span class="visually-hidden">Поиск</span>
+              <input class="header-search-input " name="search" type="text" placeholder="Поиск по сайту">
+              <em class="focus-border-imput"></em>
+              <label>
+                <button class="search-btn" type="submit">Найти</button>
+                <em class="focus-border-btn"></em>
+              </label>
+            </form>
+          </div>
 
-            </li>
+          <!--юзер бар-->
 
-            <li class="navigation-item">
-              <a class="navigation-link index-navigation-compare navigation-compare" href="#">
-                <span class="navigation-compare-title">Сравнить</span>
-              </a>
-            </li>
+          <div class="middle-user">
 
-            <li class="navigation-item">
-              <a class="navigation-link index-navigation-cart navigation-cart" href="#">
-                <span class="quantity-cutrent-item">2</span>
-                <span class="navigation-cart-title">Корзина</span>
-              </a>
-              <div class="cart-container">
-                <ul class="cart-list">
-                  <li class="cart-item">
-                    <a class="cart-item-link">
-                      <img src="./images/catalog-page/products/amateur-selfie-stick.jpg" alt="Товар" width="39"
-                        height="43" />
-                      <p class="cart-item-title">Любительская селфи-палка</p>
-                    </a>
-                  </li>
-                  <li class="cart-item-btn">
-                    <button class="item-delite">
-                      <span class="visually-hidden">Удалить товар.</span>
-                    </button>
-                  </li>
-                </ul>
-                <ul class="cart-list">
-                  <li class="cart-item">
-                    <a class="cart-item-link">
-                      <img src="./images/catalog-page/products/professional-selfie-stick.jpg" alt="Товар" width="39"
-                        height="43" />
-                      <p class="cart-item-title">Профессиональная селфи-палка</p>
-                    </a>
-                  </li>
-                  <li class="cart-item-btn">
-                    <button class="item-delite">
-                      <span class="visually-hidden">Удалить товар.</span>
-                    </button>
-                  </li>
-                </ul>
-                <div class="cart-total">
-                  <p>Товаров: 2</p>
-                  <p>Сумма: 2000 ₽</p>
+            <a class="header-link header-login" href="#">
+              <span class="navigation-login-title">Войти</span>
+            </a>
+
+
+            <ul class="header-user-list">
+
+              <li class="header-item">
+                <a class="header-link header-compare" href="#">
+                  <span class="header-compare-title">Сравнить</span>
+                </a>
+              </li>
+
+              <li class="header-item">
+                <a class="header-link header-cart" href="#">
+                  <span class="quantity-cutrent-item">2</span>
+                  <span class="header-cart-title">Корзина</span>
+                </a>
+
+                <div class="cart-container">
+                  <ul class="cart-list">
+                    <li class="cart-item">
+                      <a class="cart-item-link">
+                        <img src="./images/catalog-page/products/amateur-selfie-stick.jpg" alt="Товар" width="39"
+                          height="43" />
+                        <p class="cart-item-title">Любительская селфи-палка</p>
+                      </a>
+                    </li>
+                    <li class="cart-item-btn">
+                      <button class="item-delite">
+                        <span class="visually-hidden">Удалить товар.</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <ul class="cart-list">
+                    <li class="cart-item">
+                      <a class="cart-item-link">
+                        <img src="./images/catalog-page/products/professional-selfie-stick.jpg" alt="Товар" width="39"
+                          height="43" />
+                        <p class="cart-item-title">Профессиональная селфи-палка</p>
+                      </a>
+                    </li>
+                    <li class="cart-item-btn">
+                      <button class="item-delite">
+                        <span class="visually-hidden">Удалить товар.</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="cart-total">
+                    <p>Товаров: 2</p>
+                    <p>Сумма: 2000 ₽</p>
+                  </div>
+                  <a href="#" class="cart-open-link">Откртыть корзину</a>
                 </div>
-                <a href="#" class="cart-open-link">Откртыть корзину</a>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-          <a class="link navigation-catalog-store" href="#">Каталог товаров
+        <!--каталог товаров и навигация -->
+        <!--каталог товаров-->
+
+        <div class="header-bottom">
+
+          <a class="link header-catalog-store" href="#">Каталог товаров
             <em class="focus-border-catalog-products"></em>
             <span class="button-store"></span>
           </a>
@@ -110,7 +130,7 @@
           <div class="submenu">
 
             <div class="submenu-catalog">
-              <ul class="navigation-submenu">
+              <ul class="submenu-list">
                 <li class="submenu-items">
                   <a href="#" class="submenu-links">Виртуальная реальность</a>
                 </li>
@@ -121,7 +141,7 @@
                   <a href="#" class="submenu-links">Экшн-камеры</a>
                 </li>
               </ul>
-              <ul class="navigation-submenu">
+              <ul class="submenu-list">
                 <li class="submenu-items">
                   <a href="#" class="submenu-links">Фитнес-браслеты</a>
                 </li>
@@ -129,31 +149,37 @@
                   <a href="#" class="submenu-links">Умные часы</a>
                 </li>
               </ul>
-              <ul class="navigation-submenu">
+              <ul class="submenu-list">
                 <li class="submenu-items">
                   <a href="#" class="submenu-links">Квадрокоптеры</a>
                 </li>
               </ul>
             </div>
           </div>
-          <ul class="navigation-list navigation-servises">
-
-            <li class="navigation-item">
-              <a class="link navigation-link navigation-delivery active" href="#">Доставка</a>
-            </li>
-
-            <li class="navigation-item">
-              <a class="link navigation-link navigation-guarantee" href="#">Гарантия</a>
-            </li>
-
-            <li class="navigation-item">
-              <a class="link navigation-link navigation-contacts" href="#">Контакты</a>
-            </li>
 
 
-          </ul>
+          <!--навигация-->
 
-        </nav>
+          <div class="header-navigation">
+            <ul class="navigation-list navigation-servises">
+
+              <li class="navigation-item">
+                <a class="link navigation-link navigation-delivery active" href="#">Доставка</a>
+              </li>
+
+              <li class="navigation-item">
+                <a class="link navigation-link navigation-guarantee" href="#">Гарантия</a>
+              </li>
+
+              <li class="navigation-item">
+                <a class="link navigation-link navigation-contacts" href="#">Контакты</a>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+
 
       </header>
     </div>
@@ -306,43 +332,43 @@
       <!--Услуги магазина-->
 
       <div class="conteiner-background">
-        <div class="conteiner">
-          <section class="servises">
-            <h2 class="visually-hidden">Услуги.</h2>
-            <dl class="servises-item-features">
-              <dt>
-                <a href="#" class="link item-feature-name item-feature-name-current">Доставка</a>
-              </dt>
-              <dd class="item-feature-value value-delivery">
-                <span class="item-feature-value-title">Доставка</span>
-                Мы с удовольствием доставим ваш товар прямо к вашему
-                подъезду совершенно бесплатно! Ведь неплохо заработаем,
-                поднимая его на ваш этаж.
-              </dd>
-              <dt>
-                <a href="#" class="link yellow-button item-feature-name-garanty">Гарантия</a>
-              </dt>
-              <dd class="visually-hidden item-feature-value value-garanty">
-                <span class="visually-hidden item-feature-value-title">Гарантия</span>
-                Если из-за возгорания купленного у нас товара у вас сгорит
-                дом — не переживайте, мы выдадим вам новый. Товар, не дом,
-                конечно же.
-              </dd>
-              <dt>
-                <a href="#" class="link yellow-button item-feature-name-credit">Кредит</a>
-              </dt>
-              <dd class="visually-hidden item-feature-value value-credit">
-                <span class="visually-hidden item-feature-value-title">Кредит</span>
-                Залезть в долговую яму стало проще! Кредитные консультанты
-                подберут для вас наиболее выгодные условия кредита. Выгодные
-                для банка, разумеется.
-              </dd>
-            </dl>
+        <div class="conteiner-servises >
+          <section class=" servises">
+          <h2 class="visually-hidden">Услуги.</h2>
+          <dl class="servises-item-features">
+            <dt>
+              <a href="#" class="link item-feature-name item-feature-name-current">Доставка</a>
+            </dt>
+            <dd class="item-feature-value value-delivery">
+              <span class="item-feature-value-title">Доставка</span>
+              Мы с удовольствием доставим ваш товар прямо к вашему
+              подъезду совершенно бесплатно! Ведь неплохо заработаем,
+              поднимая его на ваш этаж.
+            </dd>
+            <dt>
+              <a href="#" class="link yellow-button item-feature-name-garanty">Гарантия</a>
+            </dt>
+            <dd class="visually-hidden item-feature-value value-garanty">
+              <span class="visually-hidden item-feature-value-title">Гарантия</span>
+              Если из-за возгорания купленного у нас товара у вас сгорит
+              дом — не переживайте, мы выдадим вам новый. Товар, не дом,
+              конечно же.
+            </dd>
+            <dt>
+              <a href="#" class="link yellow-button item-feature-name-credit">Кредит</a>
+            </dt>
+            <dd class="visually-hidden item-feature-value value-credit">
+              <span class="visually-hidden item-feature-value-title">Кредит</span>
+              Залезть в долговую яму стало проще! Кредитные консультанты
+              подберут для вас наиболее выгодные условия кредита. Выгодные
+              для банка, разумеется.
+            </dd>
+          </dl>
           </section>
         </div>
       </div>
 
-      <div class="conteiner">
+      <div class="conteiner-delivery">
 
         <div class="delivery-rare-product">
           <a class="link delivery-rare-product-link" href="#">
@@ -437,15 +463,25 @@
 
     <!--Подвал страницы-->
 
-    <div class="footer-container">
+    <div class="footer-conteiner">
       <div class="conteiner">
         <footer class="page-footer">
-          <a class="link footer-logo-link" href="index.html">
-            <img class="logo footer-logo" src="./images/footer/logo-footer.svg"
-              alt="Логотип Интернет-магазина «Девайс»." width="145" height="36"></a>
-          <div class="footer-servises">
-            <div class="footer-contacts">
-              <h2 class="visually-hidden">Контакты</h2>
+
+          <!--Лого подвала-->
+
+          <div class="footer-logo">
+            <a class="link footer-logo-link" href="index.html">
+              <img class="logo footer-logo" src="./images/footer/logo-footer.svg"
+                alt="Логотип Интернет-магазина «Девайс»." width="145" height="36"></a>
+          </div>
+
+          <!--Средняя полка подвала-->
+
+          <section class="middle-footer">
+
+            <h2 class="visually-hidden">Контакты</h2>
+
+            <div class="footer-adress">
               <address class="footer-contacts-address">
                 <p class="contacts-address-description">Санкт-Петербург, набережная реки Карповки, 5, литера
                   П.
@@ -456,7 +492,7 @@
 
             <!--навигация подвала -->
 
-            <section class="footer-navigation">
+            <div class="footer-navigation">
 
               <h2 class="visually-hidden">Навигация</h2>
 
@@ -476,19 +512,20 @@
 
               </ul>
 
-            </section>
+            </div>
 
             <!--телефон подвала-->
+            <div class="footer-tel">
+              <a class="footer-contacts-tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+            </div>
+          </section>
 
-            <a class="footer-contacts-tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-          </div>
+          <!--нижняя полка подвала-->
 
+          <section class="footer-bottom">
 
-          <!--Социальные сети подвала-->
-
-
-          <div class="footer-social-conteiner">
             <div class="footer-social">
+
               <ul class="footer-social-list">
                 <li class="footer-social-item">
                   <a class="footer-social-link" href="https://t.me/htmlacademy">
@@ -537,7 +574,7 @@
                 </svg>
               </a>
             </div>
-          </div>
+          </section>
         </footer>
       </div>
     </div>
