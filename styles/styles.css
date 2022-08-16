@@ -2066,8 +2066,8 @@ body {
 }
 
 .footer-contacts-tel {
-  -webkit-box-sizing: border-box;
-  -ms-flex-wrap: wrap;
+  box-sizing: border-box;
+  flex-wrap: wrap;
   height: 20px;
   font-style: normal;
   font-weight: 400;
