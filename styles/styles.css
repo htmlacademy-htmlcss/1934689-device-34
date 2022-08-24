@@ -235,8 +235,6 @@ body {
 
 .tools-right {
   display: flex;
-  max-width: 624px;
-  width: 100%;
 }
 
 /*tools right*/
@@ -282,8 +280,6 @@ body {
 
 .btn-wrapper {
   display: flex;
-
-  box-sizing: border-box;
 }
 
 .search-btn {
@@ -291,6 +287,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  line-height: 20px;
   background: transparent;
   border-radius: 0px 50px 50px 0px;
   cursor: pointer;
@@ -1038,36 +1035,38 @@ body {
 
 .slider-item-pagination {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   margin: 0;
 }
 
 .item-pagination-button {
-  padding: 0%;
-  margin: 0 auto;
+  display: flex;
   width: 12px;
   height: 12px;
-  background: #ffffff;
   border: 2px solid #000000;
   border-radius: 50%;
   cursor: pointer;
+  padding: 0;
 }
 
-.pagination-button-one::after {
+.item-pagination:not(:last-child) {
+  margin-right: 20px;
+}
+
+.item-pagination-button-current {
+  background: #000000;
+}
+/* .pagination-button-one::after {
   content: "";
-  position: absolute;
-  top: -25%;
-  left: -4%;
-  display: block;
   width: 18px;
   height: 18px;
   border: 2px solid transparent;
-}
+} */
 
-.pagination-button-two::after {
+/* .pagination-button-two::after {
   content: "";
   position: absolute;
   left: 38%;
@@ -1087,22 +1086,14 @@ body {
   width: 18px;
   height: 18px;
   border: 2px solid transparent;
-}
-
-.item-pagination-button-current {
-  background: #000000;
-}
-
-.item-pagination:not(:last-child) {
-  margin-right: 20px;
-}
+} */
 
 .item-pagination-button:hover {
   opacity: 0.6;
 }
 
-.item-pagination-button:focus::after {
-  border-color: #af4fff;
+.item-pagination:focus-within {
+  outline: solid 2px #af4fff;
 }
 
 .item-pagination-button:active {
