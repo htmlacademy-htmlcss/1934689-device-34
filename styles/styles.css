@@ -1059,34 +1059,6 @@ body {
 .item-pagination-button-current {
   background: #000000;
 }
-/* .pagination-button-one::after {
-  content: "";
-  width: 18px;
-  height: 18px;
-  border: 2px solid transparent;
-} */
-
-/* .pagination-button-two::after {
-  content: "";
-  position: absolute;
-  left: 38%;
-  top: -18%;
-  display: block;
-  width: 18px;
-  height: 18px;
-  border: 2px solid transparent;
-}
-
-.pagination-button-three::after {
-  content: "";
-  position: absolute;
-  right: -4%;
-  top: -18%;
-  display: block;
-  width: 18px;
-  height: 18px;
-  border: 2px solid transparent;
-} */
 
 .item-pagination-button:hover {
   opacity: 0.6;
@@ -1792,6 +1764,10 @@ body {
   font-weight: 400;
   color: #444444;
   line-height: 30px;
+}
+
+.contacts-address-tel:focus {
+  outline: solid 2px #af4fff;
 }
 
 .contacts-schedule {
