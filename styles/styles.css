@@ -2889,12 +2889,28 @@ fieldset {
   cursor: pointer;
 }
 
-.products-card:hover {
-  background-color: rgba(240, 240, 240, 0.8);
+li .products-card::before:hover {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(240, 240, 240, 0.8);
+  z-index: -2;
 }
+
 .products-card:hover .products-card-more {
   opacity: 1;
 }
+/*
+.products-card:hover .products-card-image {
+  opacity: 0.4;
+} */
+.products-card:hover .products-card-link {
+  opacity: 0.4;
+}
+
 .products-card-link:focus {
   outline: 2px solid #af4fff;
 }
