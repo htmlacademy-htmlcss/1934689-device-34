@@ -2876,7 +2876,6 @@ fieldset {
   position: absolute;
   bottom: 252px;
   left: 109px;
-
   display: block;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -2904,18 +2903,24 @@ fieldset {
   cursor: pointer;
 }
 
-.products-card::before:hover {
+.products-card-link:hover::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(240, 240, 240, 0.6);
+  background: rgba(240, 240, 240, 0.3);
 }
 
 .products-card:hover .products-card-more {
   opacity: 1;
+}
+.products-card:hover .products-card-title {
+  opacity: 0.3;
+}
+.products-card:hover .products-card-price {
+  opacity: 0.3;
 }
 
 .products-card-link:focus {
