@@ -87,17 +87,15 @@
 }
 
 .main-inner {
-  display: flex;
   width: 1440px;
   margin: 0 auto;
-  background: #f0f0f0;
+  margin-top: 35px;
 }
 
 .inner-conteiner {
-  max-width: 1160px;
-  width: 100%;
   margin: 0 auto;
-  padding: 35px 0 50px 60px;
+
+  background: #f0f0f0;
 }
 
 html {
@@ -204,6 +202,13 @@ body {
   background-color: #ffe17f;
   padding-bottom: 135px;
 }
+.header .container-catalog {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px 23px;
+  background-color: #ffe17f;
+}
 
 /* Header logo */
 .header-logo {
@@ -233,14 +238,21 @@ body {
   align-items: center;
 }
 
+/*tools right*/
+
 .tools-right {
   display: flex;
 }
 
-/*tools right*/
+.search-form {
+  display: flex;
+}
 
 .input-wrapper {
+  display: flex;
   position: relative;
+  max-width: 517px;
+  width: 100%;
 }
 
 .imput-search-ico {
@@ -278,10 +290,6 @@ body {
   pointer-events: none;
 }
 
-.btn-wrapper {
-  display: flex;
-}
-
 .search-btn {
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -299,9 +307,12 @@ body {
   background-color: #000000;
   color: #ffffff;
 }
+.focus-btn-wrapper {
+  display: flex;
+}
 
-.btn-wrapper:focus-within {
-  border: 2px solid #af4fff;
+.focus-btn-wrapper:focus-within {
+  outline: solid 2px #af4fff;
 }
 
 .search-btn:active {
@@ -1710,6 +1721,7 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  margin-bottom: 40px;
 }
 
 .delivery-company-item {
@@ -1719,7 +1731,10 @@ body {
   line-height: 20px;
   letter-spacing: -0.02em;
   margin-left: 35px;
-  margin-bottom: 19px;
+}
+
+.delivery-company-item:not(:last-child) {
+  padding-bottom: 19px;
 }
 
 .delivery-company-item::before {
@@ -1731,10 +1746,6 @@ body {
   height: 8px;
   background-color: #ffc700;
   border-radius: 50%;
-}
-
-.delivery-company-item:last-child {
-  margin-bottom: 30px;
 }
 
 .contacts h3 {
@@ -1953,13 +1964,9 @@ body {
 
 /*logo*/
 
-.footer-logo {
-  display: flex;
-  margin-bottom: 36px;
-}
-
 .footer-logo-link {
-  display: block;
+  display: inline-block;
+  margin-bottom: 36px;
 }
 
 .footer-logo-link:hover {
@@ -2215,13 +2222,18 @@ body {
 .inner-breadcrambs {
   display: flex;
   flex-direction: column;
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
   max-height: 85px;
   height: 100%;
   justify-content: space-between;
   margin-bottom: 35px;
+  padding: 0 60px;
 }
 
 .inner-title {
+  display: flex;
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
@@ -2230,6 +2242,7 @@ body {
   font-size: 50px;
   line-height: 19px;
   color: #000000;
+  margin-bottom: 16px;
 }
 
 .breadcrambs-list {
@@ -2298,6 +2311,7 @@ fieldset {
   max-width: 320px;
   width: 100%;
   margin-top: 50px;
+  padding: 0 60px 0 20px;
 }
 
 .catalog-filter-list {
@@ -2432,11 +2446,12 @@ fieldset {
 
 .range-price {
   position: relative;
+  margin-left: 15px;
 }
 
 .range-label {
   position: absolute;
-  top: 13px;
+  top: 3px;
   left: 0;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -2587,8 +2602,8 @@ fieldset {
 .control-input[type="radio"]:checked + .control-cheked::before {
   content: "";
   position: absolute;
-  top: 6px;
-  left: 6px;
+  top: 3px;
+  left: 4px;
   width: 8px;
   height: 8px;
   background-color: #000000;
@@ -2615,11 +2630,11 @@ fieldset {
   max-width: 1160px;
   width: 100%;
   background: #f0f0f0;
-  padding: 20px 0;
+  padding: 20px 0 20px 20px;
 }
 
 .filter-title-wrapper {
-  max-width: 260px;
+  max-width: 300px;
   width: 100%;
 }
 
@@ -2733,22 +2748,26 @@ fieldset {
   max-width: 1160px;
   width: 100%;
   margin: 0 auto;
+  padding-left: 50px;
 }
+
 .product-conteiner {
   max-width: 840px;
   width: 100%;
   background: #ffffff;
+  padding: 70px 40px 78px;
 }
 
 .products-card-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin: 70px 0 -4px 40px;
+  margin-bottom: 62px;
 }
 
 .products-card {
@@ -2757,15 +2776,18 @@ fieldset {
   display: grid;
   -ms-grid-columns: 180px 180px;
   grid-template-columns: 180px 180px;
-  margin-right: 40px;
-  margin-bottom: 44px;
   width: 360px;
 }
 
-.products-card-new {
+.products-card-new::after {
   position: absolute;
   top: 27px;
   right: 27px;
+  content: url("../images/catalog-page/products/new-ico.svg");
+}
+
+.products-card:not(:nth-child(3n)):not(:nth-child(4n)) {
+  margin-bottom: 44px;
 }
 
 .products-card-link {
@@ -2815,12 +2837,12 @@ fieldset {
   text-transform: uppercase;
   width: 760px;
   border: 3px solid #e5e5e5;
-  margin: 0 40px;
   padding: 18px 0;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  margin-bottom: 44px;
 }
 
 .product-show-more:hover {
@@ -2867,14 +2889,12 @@ fieldset {
   cursor: pointer;
 }
 
-.products-card-link:hover .products-card-more {
+.products-card:hover {
+  background-color: rgba(240, 240, 240, 0.8);
+}
+.products-card:hover .products-card-more {
   opacity: 1;
 }
-
-.products-card-link:hover .products-card-image {
-  opacity: 0.4;
-}
-
 .products-card-link:focus {
   outline: 2px solid #af4fff;
 }
@@ -2891,16 +2911,13 @@ fieldset {
 /* Pagination */
 
 .pagination-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
   background: #ebebeb;
-  margin: 42px 40px 78px;
-  padding: 21px 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .pagination-prev {
@@ -2913,9 +2930,11 @@ fieldset {
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
-  width: 128px;
-  padding: 24px 10px 26px 20px;
+  padding: 25px;
   text-align: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .pagination-prev:hover {
@@ -2935,8 +2954,11 @@ fieldset {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  margin: 0 160px;
   padding: 0;
+}
+
+.pagination-item {
+  display: flex;
 }
 
 .number-item-link {
@@ -2972,9 +2994,12 @@ fieldset {
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
-  width: 128px;
-  padding: 24px 10px 26px 10px;
+
+  padding: 25px;
   text-align: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .pagination-next:hover {
