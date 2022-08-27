@@ -59,11 +59,10 @@
 }
 
 .main-index {
-  background-color: #ffffff;
-  max-width: 1440px;
-  width: 100%;
+  display: block;
   flex-grow: 1;
-  margin: 0 auto;
+
+  background-color: #ffffff;
 }
 
 .container {
@@ -72,23 +71,18 @@
 }
 
 .container-background {
-  max-width: 1440px;
-  width: 100%;
   margin: 0 auto;
   background: #f0f0f0;
   margin-bottom: 70px;
 }
 
 .footer-container {
-  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   background: #444444;
 }
 
 .main-inner {
-  width: 1440px;
-  margin: 0 auto;
   margin-top: 50px;
 }
 
